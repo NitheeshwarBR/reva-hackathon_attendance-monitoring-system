@@ -14,6 +14,6 @@ config = {
 firebase = pyrebase.initialize_app(config)
 database = firebase.database()
 
-data = {"pratik": "lowda"}
+data = {"test": "parsssing object"}
 
 database.push(data)
