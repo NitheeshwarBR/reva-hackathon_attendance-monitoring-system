@@ -1,17 +1,29 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{%static '../static/css/page.css'%}">
 </head>
+
 <body>
-    <div>
-        <h1>Attendance system</h1>
-        <h4>Absentees:</h4>
-        <li id="absenteeslist">{}</li>
+    <div class="parent-container">
+        <div class="main-container">
+            <h1 class="title">The Green Ally</h1>
+        </div>
+        <div class="functional-container">
+            <h4 class="subtitle">Absentees:</h4>
+            {% for ab in abslist %}
+            <li id="absenteeslist" type="1">{{ab}}</li>
+            {% endfor %}
+        </div>
+
     </div>
+
 </body>
+
 </html>
