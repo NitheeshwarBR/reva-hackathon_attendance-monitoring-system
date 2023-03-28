@@ -1,1 +1,0 @@
-# Gold Fart (REVA HACK)
